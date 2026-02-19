@@ -1,0 +1,33 @@
+package com.test;
+
+@FunctionalInterface
+interface FunInf{
+	void draw();
+	
+	default void dog() {
+		
+	}
+	
+	static void cat() {
+		
+	}
+}
+
+class Circle implements FunInf{
+	@Override
+	
+	public void draw() {
+		System.out.println("circle");
+	}
+	
+}
+
+class Sqaure implements FunInf{
+	@Override
+	public void draw() {
+		System.out.println("square");
+	}
+}
+public class Exp2 {
+
+}

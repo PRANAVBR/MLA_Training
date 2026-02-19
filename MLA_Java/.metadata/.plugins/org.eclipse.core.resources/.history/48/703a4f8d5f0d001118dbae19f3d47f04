@@ -1,0 +1,39 @@
+package com.test;
+
+import java.util.List;
+
+public class StudentDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StudentDao sdao = new StudentDao();
+		
+		Student stu1 = new Student();
+		
+		stu1.setUsn(2);
+		stu1.setName("PRAJWAL");
+		stu1.setClg("JSS");
+		stu1.setCity("Bengaluru");
+		
+		
+		/*stu1.setId(3);
+		emp1.setName("SKY");
+		emp1.setCmp("IBM");
+		emp1.setCity("PUNE");
+		*/
+		
+		
+		
+		sdao.saveStudent(stu1);
+		//edao.updateEmployee(emp1);
+		//edao.deleteEmployee(2);
+		
+		
+		
+		System.out.println("Saved Student Data");
+		
+		List<Student> data = sdao.getAllStudent();
+		data.forEach(System.out::println);
+	}
+
+}

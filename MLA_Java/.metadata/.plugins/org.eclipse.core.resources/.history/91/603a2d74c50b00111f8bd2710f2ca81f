@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>exceptions</title>
+</head>
+<body>
+		<%
+		try{
+			int x = 100;
+		    int y = 0;
+		    out.println(x/y);
+		}
+		catch(Exception e){
+			out.println("check your inputs");
+		}
+			
+		%>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+package com.test;
+
+public class TestDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EmpDao edao = new EmpDao();
+		
+		Employee emp1 = new Employee();
+		Employee emp2 = new Employee();
+		
+		
+		emp1.setId(1);
+		emp1.setName("Rohit");
+		emp1.setCmp("Dell");
+		emp1.setCity("Bangalore");
+		
+		emp1.setId(2);
+		emp1.setName("Kohli");
+		emp1.setCmp("Mphasis");
+		emp1.setCity("Bangalore");
+		
+		edao.saveEmployee(emp1);
+		edao.saveEmployee(emp2);
+		
+		System.out.println("Saved Employee Data");
+
+	}
+
+}

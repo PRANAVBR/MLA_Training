@@ -1,0 +1,19 @@
+package jsp_custom1;
+import java.util.Date;
+
+public class MyTag extends TagSupport {
+		// TODO Auto-generated method stub
+	private static final long serialVersionUID = 1L;
+	public int doStartTag() {
+		JspWriter  out = null;
+		try {
+			out = pageContext.getOut();
+			out.println("JSP CUSTOM TAG : "+new Date());
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return SKIP_BODY;
+	}
+
+}

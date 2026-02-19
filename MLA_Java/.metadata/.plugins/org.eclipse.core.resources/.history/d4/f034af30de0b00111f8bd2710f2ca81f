@@ -1,0 +1,10 @@
+package jsp_custom1;
+
+public class MyTag {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
